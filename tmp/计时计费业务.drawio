@@ -1,0 +1,57 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
+  <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
+    <mxGraphModel dx="476" dy="189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-41" value="计时计费业务" style="swimlane;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#09555B;strokeColor=#BAC8D3;fontColor=#EEEEEE;" vertex="1" parent="1">
+          <mxGeometry x="177.25" y="1140" width="280" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-42" value="" style="ellipse;shape=startState;fillColor=#09555B;strokeColor=#BAC8D3;labelBackgroundColor=none;fontColor=#EEEEEE;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="122.75" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-43" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#0B4D6A;endFill=1;rounded=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41" source="SM4c0ZP_YM0kD4PD1Sf2-42" target="SM4c0ZP_YM0kD4PD1Sf2-44">
+          <mxGeometry x="100" y="40" as="geometry">
+            <mxPoint x="137.75" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-44" value="记录车辆进入" style="labelBackgroundColor=none;fillColor=#09555B;strokeColor=#BAC8D3;fontColor=#EEEEEE;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="82.75" y="110" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-45" value="记录车辆准备离开" style="labelBackgroundColor=none;fillColor=#09555B;strokeColor=#BAC8D3;fontColor=#EEEEEE;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="82.75" y="220" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-46" value="" style="endArrow=open;strokeColor=#0B4D6A;endFill=1;rounded=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41" source="SM4c0ZP_YM0kD4PD1Sf2-44" target="SM4c0ZP_YM0kD4PD1Sf2-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0B4D6A;" edge="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41" source="SM4c0ZP_YM0kD4PD1Sf2-47" target="SM4c0ZP_YM0kD4PD1Sf2-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-47" value="选择计费策略计算费用" style="labelBackgroundColor=none;fillColor=#09555B;strokeColor=#BAC8D3;fontColor=#EEEEEE;whiteSpace=wrap;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="82.75" y="325" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-48" value="" style="endArrow=open;strokeColor=#0B4D6A;endFill=1;rounded=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41" source="SM4c0ZP_YM0kD4PD1Sf2-45" target="SM4c0ZP_YM0kD4PD1Sf2-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0B4D6A;" edge="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41" source="SM4c0ZP_YM0kD4PD1Sf2-51" target="SM4c0ZP_YM0kD4PD1Sf2-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-51" value="发送账单，等待缴费" style="whiteSpace=wrap;html=1;fillColor=#09555B;strokeColor=#BAC8D3;fontColor=#EEEEEE;labelBackgroundColor=none;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="77.75" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-53" value="缴费完成" style="whiteSpace=wrap;html=1;fillColor=#09555B;strokeColor=#BAC8D3;fontColor=#EEEEEE;labelBackgroundColor=none;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="77.75" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-55" value="" style="ellipse;shape=endState;fillColor=#09555B;strokeColor=#BAC8D3;labelBackgroundColor=none;fontColor=#EEEEEE;" vertex="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41">
+          <mxGeometry x="122.75" y="710" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SM4c0ZP_YM0kD4PD1Sf2-56" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0B4D6A;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="SM4c0ZP_YM0kD4PD1Sf2-41" source="SM4c0ZP_YM0kD4PD1Sf2-53" target="SM4c0ZP_YM0kD4PD1Sf2-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="122.75" y="560" as="sourcePoint" />
+            <mxPoint x="192.75" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

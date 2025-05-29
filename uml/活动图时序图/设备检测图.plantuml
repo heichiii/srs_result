@@ -1,0 +1,18 @@
+@startuml
+start
+:值班员启动日常巡检;
+:系统分配检查项目;
+repeat
+  :检测设备状态;
+  if (发现异常？) then (是)
+    :触发故障上报;
+    :生成维修工单;
+    ->管理员介入;
+    :执行设备维修;
+  else (否)
+    :记录检测结果;
+  endif
+repeat while (是否完成所有项目？) until (是)
+:生成巡检报告;
+stop
+@enduml

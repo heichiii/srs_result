@@ -1,0 +1,83 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
+  <diagram name="第 1 页" id="nofMMJUWXjJUTImxkrJj">
+    <mxGraphModel dx="2040" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-1" value="" style="ellipse;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="109" y="20" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-2" value="待支付" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="84" y="84" width="64" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-3" value="支付中" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="25" y="197" width="64" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-4" value="已支付" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="84" y="535" width="64" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-5" value="已完结" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="84" y="647" width="64" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-6" value="失败" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="156" y="309" width="48" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-7" value="人工处理" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="140" y="422" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-8" value="" style="curved=1;startArrow=none;;exitX=0.47;exitY=1;entryX=0.49;entryY=0;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-1" target="7GmTFwyiHEoYh0sUhMAp-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-9" value="用户选择支付方式" style="curved=1;startArrow=none;;exitX=0.17;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-2" target="7GmTFwyiHEoYh0sUhMAp-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="57" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-10" value="第三方确认成功" style="curved=1;startArrow=none;;exitX=0.3;exitY=0.99;entryX=-0.01;entryY=0.02;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-3" target="7GmTFwyiHEoYh0sUhMAp-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="273" />
+              <mxPoint x="20" y="498" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-11" value="电子发票生成" style="curved=1;startArrow=none;;exitX=0.49;exitY=0.99;entryX=0.49;entryY=0.01;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-4" target="7GmTFwyiHEoYh0sUhMAp-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-12" value="余额不足/超时" style="curved=1;startArrow=none;;exitX=0.86;exitY=0.99;entryX=0.06;entryY=0.01;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-3" target="7GmTFwyiHEoYh0sUhMAp-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="121" y="273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-13" value="重新发起支付" style="curved=1;startArrow=none;;exitX=0.77;exitY=0.01;entryX=0.99;entryY=0.95;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-6" target="7GmTFwyiHEoYh0sUhMAp-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="217" y="273" />
+              <mxPoint x="217" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-14" value="三次尝试失败" style="curved=1;startArrow=none;;exitX=0.49;exitY=1.01;entryX=0.49;entryY=0;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-6" target="7GmTFwyiHEoYh0sUhMAp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7GmTFwyiHEoYh0sUhMAp-15" value="现金收款确认" style="curved=1;startArrow=none;;exitX=0.49;exitY=1;entryX=0.85;entryY=-0.01;rounded=0;" edge="1" parent="1" source="7GmTFwyiHEoYh0sUhMAp-7" target="7GmTFwyiHEoYh0sUhMAp-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="498" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

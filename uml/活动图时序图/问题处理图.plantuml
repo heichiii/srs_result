@@ -4,30 +4,30 @@ participant "问题处理子系统" as 问题
 participant "值班员" as 值班员
 participant "管理员" as 管理员
 
-activate 用户
 用户 -> 问题: 提交问题描述
 activate 问题
   问题 -> 问题: 创建工单
+  问题 --> 用户: 工单创建成功
 
   alt 紧急问题（如火灾报警）
-    问题 -> 问题: 自动触发声光报
-    activate 问题
+    问题 -> 问题: 自动触发声光报警
     问题 -> 值班员: 推送最高优先级工单
     activate 值班员
       值班员 -> 问题: 即时处理并反馈
+      问题 --> 值班员: 确认处理完成
     deactivate 值班员
-    deactivate 问题
   else 普通问题
     问题 -> 管理员: 分派工单队列
     activate 管理员
       管理员 -> 问题: 设置处理优先级
+      问题 --> 管理员: 确认优先级
     deactivate 管理员
     问题 -> 值班员: 分配常规处理任务
     activate 值班员
       值班员 -> 问题: 处理完成后关闭工单
+      问题 --> 值班员: 工单关闭成功
     deactivate 值班员
   end
   问题 -> 用户: 发送处理结果通知
 deactivate 问题
-deactivate 用户
 @enduml

@@ -4,7 +4,7 @@ participant "出入子系统" as 出入系统
 participant "用户子系统" as 用户系统
 participant "管理员" as 管理员
 
-group 临时用户注册流程
+group 临时用户注册流程（无预约入场）
   activate 出入系统
   出入系统 -> 出入系统: 识别未绑定车牌
   出入系统 -> 用户系统: 请求创建临时账户
@@ -17,10 +17,10 @@ group 临时用户注册流程
   deactivate 出入系统
 end
 
-group 长期用户注册流程
-  activate 用户
+group 长期用户注册流程（需身份验证）
   用户 -> 用户系统: 发起注册请求
   activate 用户系统
+  用户系统 --> 用户: 准备注册
   用户 -> 用户系统: 选择注册方式
   
     alt 手机号注册
@@ -37,6 +37,5 @@ group 长期用户注册流程
     用户系统 -> 用户系统: 开通车牌绑定权限
     用户系统 --> 用户: 返回完整账户功能
   deactivate 用户系统
-  deactivate 用户
 end
 @enduml
